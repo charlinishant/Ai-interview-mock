@@ -73,7 +73,7 @@ function AddNewInterview() {
          transition-all border-dashed'
          onClick={()=>setOpenDailog(true)}
          >
-            <h2 className='text-lg text-center'>+ Add New</h2>
+            <h2 style={{ border: '1px solid black' }} className='text-lg text-center'>+ Add New</h2>
         </div>
         <Dialog open={openDailog}>
        
