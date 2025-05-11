@@ -15,7 +15,7 @@ const categories = [
 
 const courses = [
   {
-    title: "The Complete AI Guide: Learn ChatGPT, Generative AI & More",
+    title: "The Complete Python Guide  & More",
     instructor: "Julian Melanson, Benza Maman, Leap...",
     rating: "4.5",
     reviews: "47,344",
@@ -24,7 +24,7 @@ const courses = [
     image: "/courese1.jpeg", // Replace with your own images
   },
   {
-    title: "The Complete AI-Powered Copywriting Course & ChatGPT",
+    title: "The Complete React.js",
     instructor: "Ing. Tomáš Morávek",
     rating: "4.3",
     reviews: "1,870",
@@ -33,7 +33,7 @@ const courses = [
     image: "/courese2.png",
   },
   {
-    title: "ChatGPT, DeepSeek, Grok and 30+ More AI Marketing Assistants",
+    title: "Sql Advances",
     instructor: "Anton Voroniuk",
     rating: "4.6",
     reviews: "564",
@@ -42,13 +42,13 @@ const courses = [
     image: "/courese3.png",
   },
   {
-    title: "Upgrade Your Social Media Presence with ChatGPT",
+    title: "Upgrade Your Communication"
     instructor: "Anton Voroniuk",
     rating: "4.6",
     reviews: "290",
   
     badge: "",
-    image: "/courese4 .jpeg",
+    image: "/courese4.jpeg",
   },
 ];
 
