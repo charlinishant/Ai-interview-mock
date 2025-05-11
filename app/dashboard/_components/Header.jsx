@@ -14,7 +14,7 @@ function Header() {
 
   return (
     <div className='flex p-4 items-center justify-between bg-secondary shadow-sm'>
-      <Image src={'/logo.png'} width={120} height={40} margin-left={20} alt='logo'  className="flex items-center  h=10 ml-1" />
+      <Image src={'/logo.png'} width={120} height={15} margin-left={20} alt='logo'  className="flex items-center  h=10 ml-1" />
 
         
         <ul className='hidden md:flex gap-6'>
