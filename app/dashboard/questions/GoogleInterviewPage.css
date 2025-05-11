@@ -1,0 +1,46 @@
+.interview-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 30px;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .title {
+    text-align: center;
+    color: #4285f4;
+    margin-bottom: 30px;
+  }
+  
+  .question-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .question-item {
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+  }
+  
+  .question-item:hover {
+    background-color: #eef4fe;
+    cursor: pointer;
+  }
+  
+  .question {
+    font-weight: 600;
+    color: #202124;
+  }
+  
+  .answer {
+    margin-top: 10px;
+    color: #5f6368;
+    line-height: 1.5;
+  }
+  
