@@ -40,10 +40,10 @@ function Header() {
             ${path=='/dashboard/questions'&'"text-primary font-bold'}
             `}>Questions</li>
             </Link>
-              <Link href={"/dashboard/upgrade"}>
+              <Link href={"/dashboard/courses"}>
             <li className={`hover:text-primary hover:font-bold transition-all
             cursor-pointer
-            ${path=='/dashboard/upgrade'&&'text-primary font-bold'}
+            ${path=='/dashboard/courses'&&'text-primary font-bold'}
             `}>Upgrade</li>
             </Link>
             <Link href={"/dashboard/how"}>
