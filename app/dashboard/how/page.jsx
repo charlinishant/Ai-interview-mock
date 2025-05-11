@@ -13,10 +13,10 @@ function Page() {
   ];
 
   const stepImages = [
-    "/images/step1.png",
-    "/images/step2.png",
-    "/images/step3.png",
-    "/images/step4.png",
+    "/step1.png",
+    "/step2.png",
+    "/step3.png",
+    "/step4.png",
   ];
 
   return (
