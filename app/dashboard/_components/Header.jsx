@@ -14,9 +14,18 @@ function Header() {
 
   return (
     <div className='flex p-4 items-center justify-between bg-secondary shadow-sm'>
-        <Image src={'/logo.png'} width={100} height={70} alt='logo' />
-         
+        <Image src={'/logo.png'} width={120} height={30} margin-left={20} alt='logo' />
+
+        
         <ul className='hidden md:flex gap-6'>
+          <Link href={"/"}>
+            <li className={`hover:text-primary hover:font-bold transition-all
+            cursor-pointer
+            ${path=='/'&&'text-primary font-bold'}
+            `}
+            
+            >Home</li>
+            </Link>
           <Link href={"/dashboard"}>
             <li className={`hover:text-primary hover:font-bold transition-all
             cursor-pointer
