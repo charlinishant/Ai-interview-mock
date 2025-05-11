@@ -19,40 +19,36 @@ const courses = [
     instructor: "Julian Melanson, Benza Maman, Leap...",
     rating: "4.5",
     reviews: "47,344",
-    price: "₹519",
-    oldPrice: "₹2,819",
+  
     badge: "Bestseller",
-    image: "/images/course1.jpg", // Replace with your own images
+    image: "/courese1.jpeg", // Replace with your own images
   },
   {
     title: "The Complete AI-Powered Copywriting Course & ChatGPT",
     instructor: "Ing. Tomáš Morávek",
     rating: "4.3",
     reviews: "1,870",
-    price: "₹519",
-    oldPrice: "₹3,299",
+   
     badge: "",
-    image: "/images/course2.jpg",
+    image: "/courese2.png",
   },
   {
     title: "ChatGPT, DeepSeek, Grok and 30+ More AI Marketing Assistants",
     instructor: "Anton Voroniuk",
     rating: "4.6",
     reviews: "564",
-    price: "₹609",
-    oldPrice: "₹999",
+    
     badge: "",
-    image: "/images/course3.jpg",
+    image: "/courese3.png",
   },
   {
     title: "Upgrade Your Social Media Presence with ChatGPT",
     instructor: "Anton Voroniuk",
     rating: "4.6",
     reviews: "290",
-    price: "₹539",
-    oldPrice: "₹829",
+  
     badge: "",
-    image: "/images/course4.jpg",
+    image: "/courese4 .jpeg",
   },
 ];
 
