@@ -34,7 +34,7 @@ function AddNewInterview() {
         e.preventDefault()
         console.log(jobPosition,jobDesc,jobExperience);
 
-        const InputPrompt="Job position: "+jobPosition+", Job Description: "+jobDesc+", Years of Experience : "+jobExperience+" , Depends on Job Position, Job Description & Years of Experience give us "+process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT+" Interview question along with Answer in JSON format, Give us question and answer field on JSON"
+        const InputPrompt="Job position: "+jobPosition+", Job Description: "+jobDesc+", Years of Experience : "+jobExperience+" , Depends on Job Position, Job Description & Years of Experience give us "+process.env.NEXT_PUBLIC_INTERVIEW_QUESTION_COUNT+"in that 1st Question should be tell about yourself, 2nd Question is   Interview question along with Answer in JSON format, Give us question and answer field on JSON"
 
         const result=await chatSession.sendMessage(InputPrompt);
         const MockJsonResp=(result.response.text()).replace('```json','').replace('```','')
@@ -73,7 +73,7 @@ function AddNewInterview() {
          transition-all border-dashed'
          onClick={()=>setOpenDailog(true)}
          >
-            <h2 className='text-lg text-center'>+ Add New</h2>
+            <h2  className='text-lg text-center border-blue'>+ Add New</h2>
         </div>
         <Dialog open={openDailog}>
        
