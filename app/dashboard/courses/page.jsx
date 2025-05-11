@@ -19,7 +19,6 @@ const courses = [
     instructor: "Julian Melanson, Benza Maman, Leap...",
     rating: "4.5",
     reviews: "47,344",
-  
     badge: "Bestseller",
     image: "/courese1.jpeg", // Replace with your own images
   },
@@ -37,7 +36,6 @@ const courses = [
     instructor: "Anton Voroniuk",
     rating: "4.6",
     reviews: "564",
-    
     badge: "",
     image: "/courese3.png",
   },
@@ -46,7 +44,6 @@ const courses = [
     instructor: "Anton Voroniuk",
     rating: "4.6",
     reviews: "290",
-  
     badge: "",
     image: "/courese4.jpeg",
   },
