@@ -22,7 +22,7 @@ export default function Home() {
 
       {/* Hero Section */}
       <div className="bg-gradient-to-r from-[#eef2f5] to-[#f5f8fb] flex items-center justify-center px-4">
-        <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-10">
+        <div className="max-w-6xl w-full flex flex-col-reverse md:flex-row items-center justify-between gap-12 mt-[100px]">
           <div className="flex-1">
             <h1 className="text-3xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
               Give AI Practice Interview.<br />
@@ -38,7 +38,6 @@ export default function Home() {
           </div>
 
           <div className="flex-1 relative flex justify-center">
-            
             <Image
               src={"/unnamed.png"}
               alt="Confident candidate"
@@ -57,52 +56,62 @@ export default function Home() {
         </div>
       </div>
 
-      
-
       {/* Who Can Benefit Section */}
       <div className="bg-[#f8f9fb] py-20 px-4 mt-20">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-16">
           Who Can Benefit from our AI Job Interview Simulator?
         </h2>
         <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10 text-center">
-          {/* Card 1 */}
-          <div className="flex flex-col items-center">
-            <img src="/b1.webp" alt="Non-native English speakers" className="w-24 h-24 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Non-native English speakers</h3>
-            <p className="text-sm text-gray-700">
-              Enhance your English communication skills and gain confidence in interviews with tailored practice and feedback
-            </p>
-          </div>
+          {[
+            {
+              img: "/b1.webp",
+              title: "Non-native English speakers",
+              desc: "Enhance your English communication skills and gain confidence in interviews with tailored practice and feedback",
+            },
+            {
+              img: "/b2.png",
+              title: "Job seekers",
+              desc: "Prepare for your next career move with realistic interview simulations and personalized coaching to help you stand out",
+            },
+            {
+              img: "/b3.png",
+              title: "Students and recent graduates",
+              desc: "Transition smoothly from academia to the professional world with practice scenarios designed to boost your confidence",
+            },
+            {
+              img: "/b4.png",
+              title: "Career changers",
+              desc: "Navigate your career transition with ease by refining your interview skills and adapting to new industry expectations",
+            },
+          ].map((item, idx) => (
+            <div key={idx} className="flex flex-col items-center">
+              <img src={item.img} alt={item.title} className="w-24 h-24 mb-4" />
+              <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
+              <p className="text-sm text-gray-700">{item.desc}</p>
+            </div>
+          ))}
+        </div>
+      </div>
 
-          {/* Card 2 */}
-          <div className="flex flex-col items-center">
-            <img src="/b2.png" alt="Job seekers" className="w-24 h-24 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Job seekers</h3>
-            <p className="text-sm text-gray-700">
-              Prepare for your next career move with realistic interview simulations and personalized coaching to help you stand out
-            </p>
-          </div>
-
-          {/* Card 3 */}
-          <div className="flex flex-col items-center">
-            <img src="/b3.png" alt="Students and graduates" className="w-24 h-24 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Students and recent graduates</h3>
-            <p className="text-sm text-gray-700">
-              Transition smoothly from academia to the professional world with practice scenarios designed to boost your confidence
-            </p>
-          </div>
-
-          {/* Card 4 */}
-          <div className="flex flex-col items-center">
-            <img src="/b4.png" alt="Career changers" className="w-24 h-24 mb-4" />
-            <h3 className="text-lg font-semibold text-gray-900 mb-2">Career changers</h3>
-            <p className="text-sm text-gray-700">
-              Navigate your career transition with ease by refining your interview skills and adapting to new industry expectations
-            </p>
+      {/* New Image Showcase Section */}
+      <div className="bg-white py-16 px-4">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+            Filter for specific languages, skills, or technologies
+          </h2>
+          <p className="text-gray-600 text-lg mb-10">
+            Visual feedback on sentence complexity, grammar, and pronunciation helps you improve faster and more effectively.
+          </p>
+          <div className="flex justify-center">
+            <Image
+              src="/28273e40-b63a-4065-a9b9-647f2ab6edef.png"
+              alt="Dashboard Screenshot"
+              width={900}
+              height={500}
+              className="rounded-lg shadow-xl"
+            />
           </div>
         </div>
-
-        
       </div>
     </>
   );
